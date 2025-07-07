@@ -1,0 +1,44 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style for the equals button */
+button:nth-child(12) {
+    /* Adjust this selector if button order changes */
+    grid-row: span 2;
+    /* Make it span two rows */
+    background-color: #4CAF50;
+    color: white;
+}
